@@ -9,11 +9,7 @@ import { IData } from './models/data';
 export class AppComponent implements OnInit {
   
   studentArray: Array<IData>=[
-    {
-      fname:"nilima",
-      lname :"wagh",
-      contact : 4566
-    }
+  
   ]
 
 

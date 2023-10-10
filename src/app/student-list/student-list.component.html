@@ -1,11 +1,11 @@
 
 
 
-<div class="table-responsive" >
-    <table class="table-bordered">
+<div class="table-responsive " >
+    <table class="table-bordered py-3 " *ngIf="getStdArr.length > 0; else nostdData">
         <thead>
             <tr>
-                <th>sr.no</th>
+                <th>Sr.no</th>
                 <th>Fname</th>
                 <th>Lname</th>
                 <th>Contact</th>
