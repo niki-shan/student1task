@@ -1,0 +1,28 @@
+
+
+
+<div class="table-responsive" >
+    <table class="table-bordered">
+        <thead>
+            <tr>
+                <th>sr.no</th>
+                <th>Fname</th>
+                <th>Lname</th>
+                <th>Contact</th>
+               
+            </tr>
+        </thead>
+         
+         <tbody>
+            <tr  *ngFor = "let array of  getStdArr ; index as i">
+                <td>{{i+1}}</td>
+                <td>{{array.fname}}</td>
+                <td>{{array.lname}}</td>
+                <td>{{array.contact}}</td>
+            </tr>
+         </tbody>
+    </table>
+    <ng-template  #nostdData>
+      <p class="alert alert-danger">No Data</p>
+    </ng-template>
+</div>
